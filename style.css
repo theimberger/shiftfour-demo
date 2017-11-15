@@ -37,6 +37,7 @@ h3 {
   height: auto;
   width: 300px;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .todo_list {
@@ -55,21 +56,34 @@ h3 {
   justify-content: space-between;
 }
 
+.todo:hover {
+  color: white;
+  background: black;
+}
+
+.todo:hover .close {
+  color: white;
+  border: 1px solid white;
+}
+
+
 .todo_input {
   margin: 10px;
 }
 
-input {
+.add_todo {
   margin: 0;
   border: none;
   font-size: 1em;
   outline: none;
+  width: 210px;
 }
 
-.close, .add {
+.close, .add_button {
+  font-weight: 700;
   cursor: pointer;
-  color: lightgray;
-  border: 1px solid lightgray;
+  color: black;
+  border: 1px solid black;
   border-radius: 50%;
   display: inline-block;
   height: 25px;
@@ -77,10 +91,12 @@ input {
   padding-left: 1px;
   text-align: center;
 }
-.add {
+
+.add_button {
   padding-top: 1px;
 }
-.close:hover, .add:hover {
-  color: black;
-  border: 1px solid black;
+
+.add:hover {
+  color: green;
+  border: 1px solid green;
 }
