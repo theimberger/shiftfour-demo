@@ -10,6 +10,7 @@ body {
 }
 
 header {
+  margin-top: 0;
   border-bottom: 1px solid black;
   background: black;
   color: white;
@@ -17,6 +18,11 @@ header {
 h1, h2, h3 {
   font-weight: 300;
 }
+
+#title {
+  margin-top: 0;
+}
+
 h1, p {
   margin: 5px 10px;
   padding: 0;
