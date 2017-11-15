@@ -3,25 +3,51 @@
 <html>
   <head>
     <meta charset="utf-8">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script type="text/javascript" src="./lib/shift_four.js"></script>
-   <link rel="stylesheet" type="text/css" href="./style.css">
-   <!-- <script type="text/javascript" src="./lib/main.js"></script> -->
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript"
+      src="https://theimberger.github.io/shiftfour/index.js">
+    </script>
+    <script type="text/javascript" src="./main.js"></script>
+    <title>shiftFour demo</title>
   </head>
   <body>
-    <h1 id="title">shiftFour</h1>
-    <h2>A Javascript DOM manipulation library</h2>
+    <header>
+      <h1 id="title">shiftFour</h1>
+      <p>shiftFour is a lightweight JavaScript library inspired by jQuery</p>
+    </header>
 
     <main>
-      <h3>Below are some elements to test shiftFour methods on.</h3>
-      <p>This is our paragraph!</p>
-      <ul id="tester">
-        This is a ul with three lis
-        <li class="test_item">Hello</li>
-        <li class="test_item">There</li>
-        <li class="test_item">General</li>
-      </ul>
+      <h2>Below are a few shiftFour powered widgets</h2>
+      <section class="widgets">
+
+        <section class="widget">
+          <h3>A ToDo list</h3>
+          <ul class="todo_list">
+            <li class="todo">
+              <span>Hello there!</span>
+              <span class="close">✕</span></li>
+            <li class="todo">
+              <span>General Kenobi?</span>
+              <span class="close">✕</span>
+            </li>
+            <li class="todo">
+              <span>You are a bold one.</span>
+              <span class="close">✕</span>
+            </li>
+          </ul>
+
+          <div class="todo_input">
+            <input type="text" placeholder="Add item..."></input>
+            <span class="add">┼</span>
+          </div>
+        </section>
+        <section class="widget">
+          <h3>Widget #2</h3>
+        </section>
+
+
+      </section>
     </main>
   </body>
 </html>
