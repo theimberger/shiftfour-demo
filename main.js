@@ -124,7 +124,7 @@ const requestWeather = (e) => {
 
   s4.ajax({
     method: "GET",
-    url: `http://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=b7a8f75ded6b46eb224c6a0ef234d186`,
+    url: `https://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=b7a8f75ded6b46eb224c6a0ef234d186`,
     success: gotWeather,
     failure: weatherFail
   });
