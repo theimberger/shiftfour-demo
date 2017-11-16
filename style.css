@@ -11,7 +11,7 @@ body {
 
 header {
   margin-top: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid gold;
   background: black;
   color: white;
 }
@@ -28,6 +28,10 @@ h1, p {
   padding: 0;
 }
 
+h2 {
+  text-align: center;
+}
+
 .widgets {
   width: 100%;
   display: flex;
@@ -36,14 +40,17 @@ h1, p {
 
 h3 {
   margin-top: 0px;
+  color: gold;
 }
 
 .widget {
+  background: black;
   padding: 10px;
   height: auto;
-  width: 300px;
-  border: 1px solid black;
+  width: 400px;
+  border: 3px solid gold;
   border-radius: 10px;
+  color: white;
 }
 
 .todo_list {
@@ -53,7 +60,8 @@ h3 {
 .todo, .todo_input {
   font-size: 1em;
   list-style: none;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
   border-radius: 10px;
   margin: 10px 0;
   padding: 10px;
@@ -63,13 +71,13 @@ h3 {
 }
 
 .todo:hover {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 .todo:hover .close {
-  color: white;
-  border: 1px solid white;
+  color: black;
+  border: 1px solid black;
 }
 
 
@@ -82,14 +90,29 @@ h3 {
   border: none;
   font-size: 1em;
   outline: none;
-  width: 210px;
+  width: 310px;
+  background: black;
+  color: white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: gold;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: gold;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: gold;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: gold;
 }
 
 .close, .add_button {
   font-weight: 700;
   cursor: pointer;
-  color: black;
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   border-radius: 50%;
   display: inline-block;
   height: 25px;
@@ -105,4 +128,35 @@ h3 {
 .add:hover {
   color: green;
   border: 1px solid green;
+}
+
+table {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+td {
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  background: white;
+}
+
+button {
+  padding: 10px;
+  color: gold;
+  background: black;
+  border: 3px solid white;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background: white;
+  color: black;
 }
