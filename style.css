@@ -9,6 +9,15 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited, a:hover {
+  color: gold;
+}
+
 header {
   margin-top: 0;
   border-bottom: 3px solid gold;
@@ -16,6 +25,7 @@ header {
   color: white;
   padding-left: 10px;
 }
+
 h1, h2, h3 {
   font-weight: 300;
 }
@@ -27,6 +37,13 @@ h1, h2, h3 {
 h1, p {
   margin: 5px 10px;
   padding: 0;
+}
+
+#signature {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 1.3em;
 }
 
 h2 {
